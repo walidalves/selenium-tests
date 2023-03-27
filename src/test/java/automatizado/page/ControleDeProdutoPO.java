@@ -35,11 +35,26 @@ public class ControleDeProdutoPO extends BasePO {
 
     @FindBy(id = "btn-sair")
     public WebElement btnSair;
+    
+    @FindBy(id = "mensagem")
+    public WebElement spanMensagem;
 
     public ControleDeProdutoPO(WebDriver driver) {
         super(driver);
     }
 
+    public void cadastrarProduto(String codigo, String nome, Integer quantidade, Double valor, String  data){
+
+        escrever(inputCodigo, codigo);
+        escrever(inputNome, nome);
+        escrever(inputQuantidade, quantidade.toString());
+        escrever(inputValor, valor.toString());
+        escrever(inputData, data);
+    
+        btnSalvar.click();
     
     
+    }
+
+   
 }

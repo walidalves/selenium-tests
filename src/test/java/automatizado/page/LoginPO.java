@@ -1,6 +1,5 @@
 package automatizado.page;
 
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,11 +24,6 @@ public class LoginPO extends BasePO {
      */
     public LoginPO(WebDriver driver) {
         super(driver);
-    }
-
-    public void escrever(WebElement input, String texto){
-        input.clear();
-        input.sendKeys(texto + Keys.TAB);
     }
     
     public String obterMensagem(){

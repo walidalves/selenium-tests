@@ -42,12 +42,11 @@ public class ControleDeProdutoTest extends BaseTest{
     @Test
     public void TC002_naoDeveSerPossivelCadaastrarProdutoCampoVazio(){
         controlleProdutoPage.btnAdicionar.click();
-        //TODO: Remover esse clique, aassim que o sistema for corrigido
-        controlleProdutoPage.btnAdicionar.click();
+        controlleProdutoPage.cadastrarProduto("0000010", "Martelo", 5, 56.9, "");
         
-        String titulo = controlleProdutoPage.tituloModal.getText();
+        String mensagem = controlleProdutoPage.spanMensagem.getText();
 
-        assertEquals("Produto", titulo);
+        assertEquals("Todos os campos são obrigatórios para o cadastro!", mensagem);
     }
 
 }
