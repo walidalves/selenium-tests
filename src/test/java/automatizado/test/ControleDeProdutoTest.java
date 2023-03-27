@@ -34,6 +34,20 @@ public class ControleDeProdutoTest extends BaseTest{
         String titulo = controlleProdutoPage.tituloModal.getText();
 
         assertEquals("Produto", titulo);
+
+        controlleProdutoPage.btnSair.click();
+        controlleProdutoPage.btnSair.click();
+    }
+
+    @Test
+    public void TC002_naoDeveSerPossivelCadaastrarProdutoCampoVazio(){
+        controlleProdutoPage.btnAdicionar.click();
+        //TODO: Remover esse clique, aassim que o sistema for corrigido
+        controlleProdutoPage.btnAdicionar.click();
+        
+        String titulo = controlleProdutoPage.tituloModal.getText();
+
+        assertEquals("Produto", titulo);
     }
 
 }

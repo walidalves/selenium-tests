@@ -15,19 +15,26 @@ public class ControleDeProdutoPO extends BasePO {
     @FindBy(css = "div.modal-header>h4")
     public WebElement tituloModal;
 
-    // codigo
+    @FindBy(id = "codigo")
+    public WebElement inputCodigo;
 
-    // nome
+    @FindBy(id = "nome")
+    public WebElement inputNome;
 
-    // quantidade
+    @FindBy(id = "quantidade")
+    public WebElement inputQuantidade;
 
-    // valor
+    @FindBy(id = "valor")
+    public WebElement inputValor;
 
-    // data
+    @FindBy(id = "data")
+    public WebElement inputData;
 
-    // btn-salvar
+    @FindBy(id = "btn-salvar")
+    public WebElement btnSalvar;
 
-    // btn-sair
+    @FindBy(id = "btn-sair")
+    public WebElement btnSair;
 
     public ControleDeProdutoPO(WebDriver driver) {
         super(driver);
