@@ -4,8 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import automatizado.builder.ProdutoBuilder;
+
 public class ControleDeProdutoPO extends BasePO {
 
+    //#region WebElements
     @FindBy(id = "btn-adicionar")
     public WebElement btnAdicionar;
 
@@ -39,22 +42,22 @@ public class ControleDeProdutoPO extends BasePO {
     @FindBy(id = "mensagem")
     public WebElement spanMensagem;
 
+    //#endregion WeblElements
+
+    //#region Construtor
+
     public ControleDeProdutoPO(WebDriver driver) {
         super(driver);
     }
+    
+    //#endregion Construtor
 
-    public void cadastrarProduto(String codigo, String nome, Integer quantidade, Double valor, String  data){
-
-        escrever(inputCodigo, codigo);
-        escrever(inputNome, nome);
-        escrever(inputQuantidade, quantidade.toString());
-        escrever(inputValor, valor.toString());
-        escrever(inputData, data);
+    //#region Métodos
     
-        btnSalvar.click();
-    
-    
+    public void cadastrarProduto(ProdutoBuilder produtoBuilder){
+        produtoBuilder.builder();    
     }
-
    
+    //#endregion Métodos
+
 }
