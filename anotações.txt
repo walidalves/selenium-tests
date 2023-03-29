@@ -1,4 +1,4 @@
-Passo-a-Passo para criação dee testes automatizados.
+Passo-a-Passo para criação dee testes automatizados, e anotações gerais.
 
 1º Estruturar o PageObject de login.
     1.1 Criar um arquivo LoginPO.java dentro da pasta page. - ok
@@ -10,11 +10,33 @@ Passo-a-Passo para criação dee testes automatizados.
     2.1 Criar um arquivo chamado LoginTest.java dentro da pasta test - ok
     2.2 Fazer a herança do arquivo BaseTeste.java. - ok
     2.3 Criar um método inicial que saiba instanciar uma PO de Login. - ok
-    2.4 Criar os testes baseados na Planilha.
-        2.4.1 Não deve logar no sistema com usuário e senha vazios.
-        .
-        .
-        .
-        Os passos do teste  login.
+    2.4 Criar os testes baseados na Planilha. - ok
 
 
+
+Infos
+0 0 0
+
+100
+
+tag: h2, button, div - 1 ponto
+classe: .container .alert - 10 pontos
+Id: #btn-adicionar - 100 pontos
+
+<button class="btn-primary">A</button>
+<button class="btn-primary">B</button>
+<button class="btn-primary">C</button>
+
+button 1
+.btn-primary 10
+button.btn-primary 11
+btn-entrar 100
+
+
+querySelector better than $x(cont xpath) 
+
+getElementById
+querySelector('')
+querySelector('.table').textContent
+querySelector('.table')
+querySelector('table.table')
