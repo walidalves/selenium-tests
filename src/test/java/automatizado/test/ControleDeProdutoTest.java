@@ -40,19 +40,8 @@ public class ControleDeProdutoTest extends BaseTest{
         controlleProdutoPage.btnSair.click();
     }
 
-    // @Test
-    // public void TC002_naoDeveSerPossivelCadaastrarProdutoCampoVazio(){
-    //     controlleProdutoPage.btnAdicionar.click();
-    //     controlleProdutoPage.cadastrarProduto("0000010", "Martelo", 5, 56.9, "");
-        
-    //     String mensagem = controlleProdutoPage.spanMensagem.getText();
-
-    //     assertEquals("Todos os campos são obrigatórios para o cadastro!", mensagem);
-    // }
-
-
     @Test
-    public void TC003_naoDeveSerPossivelCadaastrarProdutoCampoVazio(){
+    public void TC002_naoDeveSerPossivelCadaastrarProdutoCampoVazio(){
         
         String mensagem = "Todos os campos são obrigatórios para o cadastro!";
         controlleProdutoPage.btnAdicionar.click();
