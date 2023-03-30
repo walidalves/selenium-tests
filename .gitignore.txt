@@ -1,0 +1,11 @@
+# Ignore os arquivos de sistema do Mac
+.DS_store
+
+# Ignore todos os arquivos.class
+*.class
+
+# Ignore todos os arquivos de texto
+*.txt
+
+# Ignore arquivos de configuração de SASS
+.sass-cache

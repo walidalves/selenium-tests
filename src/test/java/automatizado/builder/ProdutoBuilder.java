@@ -1,7 +1,5 @@
 package automatizado.builder;
 
-import org.openqa.selenium.WebDriver;
-
 import automatizado.page.ControleDeProdutoPO;
 /**
  * Classe que sabe construir ou adicionar um produto na tela.
